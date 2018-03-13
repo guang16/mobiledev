@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Chat OL</string>
+    <string name="register">Register</string>
+    <string name="logo">This is logo</string>
+    <string name="login">Login</string>
+    <string name="userName">UserName</string>
+    <string name="email">example@abc.com</string>
+    <string name="password">***</string>
+</resources>
