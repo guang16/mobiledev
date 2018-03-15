@@ -79,13 +79,13 @@
         app:layout_constraintBottom_toBottomOf="@+id/chat5"
         app:layout_constraintStart_toEndOf="@+id/chat5" />
 
-    <TextView
+    <EditText
         android:id="@+id/feedback_content"
-        android:layout_width="225dp"
-        android:layout_height="58dp"
-        android:layout_marginBottom="88dp"
-        android:layout_marginEnd="36dp"
-        android:layout_marginRight="36dp"
+        android:layout_width="223dp"
+        android:layout_height="51dp"
+        android:layout_marginBottom="96dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginRight="40dp"
         android:text="@string/feedback_content"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/submit" />
