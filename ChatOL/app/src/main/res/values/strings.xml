@@ -7,4 +7,20 @@
     <string name="email">example@abc.com</string>
     <string name="password">***</string>
     <string name="submit">Send</string>
+    <string name="signup">SignUp</string>
+    <string name="feedback_content">FeedBack</string>
+    <string name="chat1">ChatRoom1</string>
+    <string name="chat2">ChatRoom2</string>
+    <string name="chat3">ChatRoom3</string>
+    <string name="chat4">ChatRoom4</string>
+    <string name="chat5">ChatRoom5</string>
+    <string name="chat6">ChatRoom6</string>
+    <string name="description">This is the description of the chat room</string>
+    <string name="logo_clickable">Clickable logo</string>
+    <string name="input">User Input</string>
+    <string name="chat_body">Chat Body</string>
+    <string name="list">Users</string>
+    <string name="temp_user">Temp User</string>
+    <string name="remove">Remove</string>
+    <string name="user_data">User Data</string>
 </resources>

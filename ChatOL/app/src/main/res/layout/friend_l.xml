@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="415dp"
+        android:layout_height="187dp"
+        android:layout_marginTop="8dp"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="@+id/logo_F_L"
+        app:layout_constraintTop_toBottomOf="@+id/logo_F_L">
+
+        <TextView
+            android:id="@+id/user1"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:text="@string/temp_user" />
+
+        <TextView
+            android:id="@+id/user2"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:text="@string/temp_user" />
+
+        <TextView
+            android:id="@+id/user3"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:text="@string/temp_user" />
+
+        <TextView
+            android:id="@+id/user4"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:text="@string/temp_user" />
+
+        <TextView
+            android:id="@+id/user5"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:text="@string/temp_user" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/remove"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="@string/remove"
+        app:layout_constraintEnd_toEndOf="@+id/linearLayout4"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout4" />
+
+    <TextView
+        android:id="@+id/user_data"
+        android:layout_width="130dp"
+        android:layout_height="187dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/user_data"
+        app:layout_constraintStart_toEndOf="@+id/linearLayout4"
+        app:layout_constraintTop_toBottomOf="@+id/logo_F_L" />
+
+    <ImageView
+        android:id="@+id/logo_F_L"
+        android:layout_width="554dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:contentDescription="@string/logo_clickable"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/ic_launcher" />
+
+</android.support.constraint.ConstraintLayout>

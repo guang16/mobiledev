@@ -12,9 +12,9 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         if(getResources().getConfiguration().orientation== Configuration.ORIENTATION_LANDSCAPE) {
-            setContentView(R.layout.home_page_l);
+            setContentView(R.layout.friend_l);
         } else{
-            setContentView(R.layout.home_page_p);
+            setContentView(R.layout.friend_p);
         }
         Log.i("MyProgram","onCreate called");
         getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_HIDDEN);

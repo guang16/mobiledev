@@ -1,6 +1,114 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.constraint.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <ImageView
+        android:id="@+id/logo_CR_P"
+        android:layout_width="346dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:contentDescription="@string/logo_clickable"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/ic_launcher" />
+
+    <TextView
+        android:id="@+id/chat1"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginRight="40dp"
+        android:text="@string/chat1"
+        app:layout_constraintEnd_toStartOf="@+id/chat2"
+        app:layout_constraintTop_toTopOf="@+id/chat2" />
+
+    <TextView
+        android:id="@+id/chat2"
+        android:layout_width="61dp"
+        android:layout_height="56dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginRight="36dp"
+        android:text="@string/chat2"
+        app:layout_constraintEnd_toStartOf="@+id/chat3"
+        app:layout_constraintTop_toTopOf="@+id/chat3" />
+
+    <TextView
+        android:id="@+id/chat3"
+        android:layout_width="59dp"
+        android:layout_height="55dp"
+        android:layout_marginBottom="24dp"
+        android:text="@string/chat3"
+        app:layout_constraintBottom_toTopOf="@+id/chat6"
+        app:layout_constraintEnd_toEndOf="@+id/chat6" />
+
+    <TextView
+        android:id="@+id/chat4"
+        android:layout_width="58dp"
+        android:layout_height="65dp"
+        android:layout_marginBottom="68dp"
+        android:layout_marginStart="72dp"
+        android:layout_marginLeft="72dp"
+        android:text="@string/chat4"
+        app:layout_constraintBottom_toTopOf="@+id/feedback_content"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/chat5"
+        android:layout_width="56dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="4dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginLeft="44dp"
+        android:text="@string/chat5"
+        app:layout_constraintBottom_toBottomOf="@+id/chat4"
+        app:layout_constraintStart_toEndOf="@+id/chat4" />
+
+    <TextView
+        android:id="@+id/chat6"
+        android:layout_width="55dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:text="@string/chat6"
+        app:layout_constraintBottom_toBottomOf="@+id/chat5"
+        app:layout_constraintStart_toEndOf="@+id/chat5" />
+
+    <TextView
+        android:id="@+id/feedback_content"
+        android:layout_width="225dp"
+        android:layout_height="58dp"
+        android:layout_marginBottom="88dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginRight="36dp"
+        android:text="@string/feedback_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/submit" />
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:text="@string/submit"
+        app:layout_constraintBottom_toTopOf="@+id/feedback"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/feedback"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="28dp"
+        android:layout_marginStart="256dp"
+        android:layout_marginLeft="256dp"
+        android:text="@string/feedback_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/feedback_content" />
 </android.support.constraint.ConstraintLayout>
