@@ -33,16 +33,23 @@
             android:text="@string/list" />
     </LinearLayout>
 
-    <TextView
-        android:id="@+id/chat_body"
+    <ScrollView
+        android:id="@+id/scroll_chat"
         android:layout_width="419dp"
         android:layout_height="165dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginTop="24dp"
         android:text="@string/chat_body"
-        app:layout_constraintEnd_toStartOf="@+id/linearLayout2"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+        app:layout_constraintEnd_toStartOf="@+id/userList"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" >
+
+        <TextView
+            android:id="@+id/chat_body"
+            android:layout_width="419dp"
+            android:layout_height="165dp"
+            android:text="TextView" />
+    </ScrollView>
 
     <EditText
         android:id="@+id/input"
@@ -53,7 +60,7 @@
         android:layout_marginTop="16dp"
         android:text="@string/input"
         app:layout_constraintEnd_toStartOf="@+id/submit"
-        app:layout_constraintTop_toBottomOf="@+id/chat_body" />
+        app:layout_constraintTop_toBottomOf="@+id/scroll_chat" />
 
     <Button
         android:id="@+id/submit"
@@ -63,59 +70,17 @@
         android:layout_marginRight="8dp"
         android:layout_marginTop="8dp"
         android:text="@string/submit"
-        app:layout_constraintEnd_toStartOf="@+id/linearLayout2"
-        app:layout_constraintTop_toBottomOf="@+id/chat_body" />
+        app:layout_constraintEnd_toStartOf="@+id/userList"
+        app:layout_constraintTop_toBottomOf="@+id/scroll_chat" />
 
-    <LinearLayout
-        android:id="@+id/linearLayout2"
+    <FrameLayout
+        android:id="@+id/userList"
         android:layout_width="141dp"
         android:layout_height="246dp"
         android:layout_marginTop="8dp"
         android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="@+id/linearLayout"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout">
-
-        <TextView
-            android:id="@+id/user1"
-            android:layout_width="match_parent"
-            android:layout_height="24dp"
-            android:text="@string/temp_user" />
-
-        <TextView
-            android:id="@+id/user2"
-            android:layout_width="match_parent"
-            android:layout_height="24dp"
-            android:text="@string/temp_user" />
-
-        <TextView
-            android:id="@+id/user3"
-            android:layout_width="match_parent"
-            android:layout_height="24dp"
-            android:text="@string/temp_user" />
-
-        <TextView
-            android:id="@+id/user4"
-            android:layout_width="match_parent"
-            android:layout_height="24dp"
-            android:text="@string/temp_user" />
-
-        <TextView
-            android:id="@+id/user5"
-            android:layout_width="match_parent"
-            android:layout_height="24dp"
-            android:text="@string/temp_user" />
-
-        <TextView
-            android:id="@+id/user6"
-            android:layout_width="match_parent"
-            android:layout_height="24dp"
-            android:text="@string/temp_user" />
-
-        <TextView
-            android:id="@+id/user7"
-            android:layout_width="match_parent"
-            android:layout_height="24dp"
-            android:text="@string/temp_user" />
-    </LinearLayout>
+    </FrameLayout>
 
 </android.support.constraint.ConstraintLayout>

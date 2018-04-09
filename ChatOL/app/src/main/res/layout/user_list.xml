@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/user1"
+            android:layout_width="match_parent"
+            android:layout_height="24dp"
+            android:text="@string/temp_user" />
+
+        <TextView
+            android:id="@+id/user2"
+            android:layout_width="match_parent"
+            android:layout_height="24dp"
+            android:text="@string/temp_user" />
+
+        <TextView
+            android:id="@+id/user3"
+            android:layout_width="match_parent"
+            android:layout_height="24dp"
+            android:text="@string/temp_user" />
+
+        <TextView
+            android:id="@+id/user4"
+            android:layout_width="match_parent"
+            android:layout_height="24dp"
+            android:text="@string/temp_user" />
+
+        <TextView
+            android:id="@+id/user5"
+            android:layout_width="match_parent"
+            android:layout_height="24dp"
+            android:text="@string/temp_user" />
+
+        <TextView
+            android:id="@+id/user6"
+            android:layout_width="match_parent"
+            android:layout_height="24dp"
+            android:text="@string/temp_user" />
+
+        <TextView
+            android:id="@+id/user7"
+            android:layout_width="match_parent"
+            android:layout_height="24dp"
+            android:text="@string/temp_user" />
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
