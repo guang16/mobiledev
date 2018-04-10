@@ -16,7 +16,7 @@ import android.widget.TextView;
 import static com.example.glennguan.chatol.MainActivity.SOME_KEY;
 
 public class chat extends AppCompatActivity implements List.OnListInteractionListener {
-    public String value;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -28,7 +28,7 @@ public class chat extends AppCompatActivity implements List.OnListInteractionLis
         Log.i("MyProgram","onCreate called");
         getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_HIDDEN);
         Intent intent = getIntent();
-        value = intent.getStringExtra(SOME_KEY);
+
     }
 
     @Override
@@ -47,8 +47,16 @@ public class chat extends AppCompatActivity implements List.OnListInteractionLis
                     f.commit();
                 }
             });
+
         }
 
+        Button button = findViewById(R.id.friend);
+        button.setOnClickListener(new View.OnClickListener() {
+        @Override
+        public void onClick(View v) {
+            changeActivityToFriend();
+        }
+    });
 
 
     }
@@ -61,10 +69,11 @@ public class chat extends AppCompatActivity implements List.OnListInteractionLis
 
 
 
-    public void addText ()
-    {
+
+
+    public void addChat(View view) {
         String value = ((EditText)findViewById(R.id.input)).getText().toString();
-        ((TextView)findViewById(R.id.chat_body)).setText("value: " + value+ "\n" +((TextView)findViewById(R.id.chat_body)).getText());
+        ((TextView)findViewById(R.id.chat_body)).setText(SOME_KEY + value+ "\n" +((TextView)findViewById(R.id.chat_body)).getText());
         ((EditText)findViewById(R.id.input)).setText("");
     }
 }

@@ -50,6 +50,7 @@ public class chat_room extends AppCompatActivity implements FeedBack.OnFeedBackI
 
 
         chat1 = findViewById(R.id.chat1);
+        if(getResources().getConfiguration().orientation== Configuration.ORIENTATION_LANDSCAPE) {
         chat1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -59,9 +60,10 @@ public class chat_room extends AppCompatActivity implements FeedBack.OnFeedBackI
                 f.add(R.id.description_frame,description);
                 f.commit();
             }
-        });
+        });}
 
         chat2 = findViewById(R.id.chat2);
+        if(getResources().getConfiguration().orientation== Configuration.ORIENTATION_LANDSCAPE) {
         chat2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -71,9 +73,10 @@ public class chat_room extends AppCompatActivity implements FeedBack.OnFeedBackI
                 f.add(R.id.description_frame,description);
                 f.commit();
             }
-        });
+        });}
 
         chat3 = findViewById(R.id.chat3);
+        if(getResources().getConfiguration().orientation== Configuration.ORIENTATION_LANDSCAPE) {
         chat3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -83,21 +86,24 @@ public class chat_room extends AppCompatActivity implements FeedBack.OnFeedBackI
                 f.add(R.id.description_frame,description);
                 f.commit();
             }
-        });
+        });}
 
         chat4 = findViewById(R.id.chat4);
-        chat4.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Description description = new Description();
-                description.setArguments(getIntent().getExtras());
-                FragmentTransaction f = getSupportFragmentManager().beginTransaction();
-                f.add(R.id.description_frame,description);
-                f.commit();
-            }
-        });
+        if(getResources().getConfiguration().orientation== Configuration.ORIENTATION_LANDSCAPE) {
+            chat4.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    Description description = new Description();
+                    description.setArguments(getIntent().getExtras());
+                    FragmentTransaction f = getSupportFragmentManager().beginTransaction();
+                    f.add(R.id.description_frame, description);
+                    f.commit();
+                }
+            });
+        }
 
         chat5 = findViewById(R.id.chat5);
+        if(getResources().getConfiguration().orientation== Configuration.ORIENTATION_LANDSCAPE) {
         chat5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -107,32 +113,35 @@ public class chat_room extends AppCompatActivity implements FeedBack.OnFeedBackI
                 f.add(R.id.description_frame,description);
                 f.commit();
             }
-        });
+        });}
 
         chat6 = findViewById(R.id.chat6);
-        chat6.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Description description = new Description();
-                description.setArguments(getIntent().getExtras());
-                FragmentTransaction f = getSupportFragmentManager().beginTransaction();
-                f.add(R.id.description_frame,description);
-                f.commit();
-            }
-        });
+        if(getResources().getConfiguration().orientation== Configuration.ORIENTATION_LANDSCAPE) {
+            chat6.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    Description description = new Description();
+                    description.setArguments(getIntent().getExtras());
+                    FragmentTransaction f = getSupportFragmentManager().beginTransaction();
+                    f.add(R.id.description_frame, description);
+                    f.commit();
+                }
+            });
+        }
 
-
-        Button feedback = findViewById(R.id.feedback);
-        feedback.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                FeedBack feedBack = new FeedBack();
-                feedBack.setArguments(getIntent().getExtras());
-                FragmentTransaction f = getSupportFragmentManager().beginTransaction();
-                f.add(R.id.description_frame,feedBack);
-                f.commit();
-            }
-        });
+        if(getResources().getConfiguration().orientation== Configuration.ORIENTATION_PORTRAIT) {
+            Button feedback = findViewById(R.id.feedback);
+            feedback.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    FeedBack feedBack = new FeedBack();
+                    feedBack.setArguments(getIntent().getExtras());
+                    FragmentTransaction f = getSupportFragmentManager().beginTransaction();
+                    f.add(R.id.feedBack_frame, feedBack);
+                    f.commit();
+                }
+            });
+        }
 
     }
 
@@ -140,9 +149,6 @@ public class chat_room extends AppCompatActivity implements FeedBack.OnFeedBackI
     public void changeActivityToChat(){
 
             Intent intent = new Intent(this, chat.class);
-
-
-
             startActivity(intent);}
 
     }

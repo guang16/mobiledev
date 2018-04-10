@@ -14,6 +14,9 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
     public final static String SOME_KEY = "ChatOL";
+    public String newUser;
+    public String newPass;
+    public String email;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -38,6 +41,27 @@ public class MainActivity extends AppCompatActivity {
                 changeActivityToChatRoom();
             }
         });
+
+
+        Button register = findViewById(R.id.register);
+        register.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(getResources().getConfiguration().orientation != Configuration.ORIENTATION_LANDSCAPE)
+                {setContentView(R.layout.home_page_l);}
+                else {
+                    newUser = ((EditText)findViewById(R.id.userName)).getText().toString();
+                    newPass = ((EditText)findViewById(R.id.password)).getText().toString();
+                    email = ((EditText)findViewById(R.id.password)).getText().toString();
+
+                }
+            }
+        });
+    }
+
+    public void storeUserInfo(String id, String pass, String em)
+    {
+        //need implement, will upload user data to the data base;
     }
 
     public void changeActivityToChatRoom(){

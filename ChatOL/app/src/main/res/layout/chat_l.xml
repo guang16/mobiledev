@@ -31,6 +31,13 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="@string/list" />
+
+        <Button
+            android:id="@+id/friend"
+            android:layout_width="25dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Friends" />
     </LinearLayout>
 
     <ScrollView
@@ -71,7 +78,8 @@
         android:layout_marginTop="8dp"
         android:text="@string/submit"
         app:layout_constraintEnd_toStartOf="@+id/userList"
-        app:layout_constraintTop_toBottomOf="@+id/scroll_chat" />
+        app:layout_constraintTop_toBottomOf="@+id/scroll_chat"
+        android:onClick="addChat"/>
 
     <FrameLayout
         android:id="@+id/userList"
